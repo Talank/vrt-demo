@@ -16,7 +16,20 @@ const config = {
         default: {
             selenium_host: '127.0.0.1',
             launch_url: 'http://172.17.0.1:3000',
-            globals: {},
+            globals: {
+                visual_regression_settings: {
+                    generate_screenshot_path: generateScreenshotFilePath,
+                    latest_screenshots_path: 'tests/vrt/latest',
+                    latest_suffix: '',
+                    baseline_screenshots_path: 'tests/vrt/baseline',
+                    baseline_suffix: '',
+                    diff_screenshots_path: 'tests/vrt/diff',
+                    diff_suffix: '',
+                    threshold: 0.02,
+                    prompt: false,
+                    always_save_diff_screenshot: false
+                }
+            },
             desiredCapabilities: {
                 browserName: 'chrome',
                 javascriptEnabled: true,
@@ -24,18 +37,6 @@ const config = {
                     args: ['disable-gpu'],
                     w3c: false
                 }
-            },
-            visual_regression_settings: {
-                generate_screenshot_path: generateScreenshotFilePath,
-                latest_screenshots_path: 'tests/vrt/latest',
-                latest_suffix: '',
-                baseline_screenshots_path: 'tests/vrt/baseline',
-                baseline_suffix: '',
-                diff_screenshots_path: 'tests/vrt/diff',
-                diff_suffix: '',
-                threshold: 0,
-                prompt: false,
-                always_save_diff_screenshot: true
             }
         }
     }

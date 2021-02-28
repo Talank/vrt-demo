@@ -1,4 +1,3 @@
-const { util } = require('util')
 const { Given, When, Then } = require('cucumber');
 const { client } = require('nightwatch-api');
 

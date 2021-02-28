@@ -4,3 +4,5 @@ node_modules
 # visual regression testing artifacts
 /tests/vrt/diff
 /tests/vrt/latest
+/tests/vrt/baseline
+/tests/vrt/
