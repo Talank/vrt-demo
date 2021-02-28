@@ -15,7 +15,7 @@ const config = {
     test_settings: {
         default: {
             selenium_host: '127.0.0.1',
-            launch_url: 'http://localhost:3000',
+            launch_url: 'http://172.17.0.1:3000',
             globals: {},
             desiredCapabilities: {
                 browserName: 'chrome',
@@ -35,7 +35,7 @@ const config = {
                 diff_suffix: '',
                 threshold: 0,
                 prompt: false,
-                always_save_diff_screenshot: false
+                always_save_diff_screenshot: true
             }
         }
     }
