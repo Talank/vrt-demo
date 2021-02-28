@@ -38,6 +38,7 @@
     "cucumber": "^7.0.0-rc.0",
     "gh-pages": "^2.0.1",
     "nightwatch": "^1.5.1",
-    "nightwatch-api": "^3.0.2"
+    "nightwatch-api": "^3.0.2",
+    "nightwatch-vrt": "^0.2.10"
   }
 }
