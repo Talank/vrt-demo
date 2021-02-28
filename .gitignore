@@ -1,2 +1,8 @@
 node_modules
 .idea/*
+
+# visual regression testing artifacts
+/tests/vrt/diff
+/tests/vrt/latest
+/tests/vrt/baseline
+/tests/vrt/
