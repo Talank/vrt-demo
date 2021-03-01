@@ -15,5 +15,5 @@ This is a simple To Do Application in react with tests written in nightwatch. Th
 ## Run the test:
 Use the following command to run the test;
 ```
-yarn run test-vrt
+yarn run test-e2e
 ```
