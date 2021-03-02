@@ -1,6 +1,5 @@
 const { Then } = require('cucumber');
 const { client } = require('nightwatch-api');
-const path = require('path');
 
 const toDoFormSelector = "#to-do-form"
 
