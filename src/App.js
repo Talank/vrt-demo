@@ -55,7 +55,7 @@ class App extends React.Component {
   setUpdate(text,key){
     console.log("items:"+this.state.items);
     const items = this.state.items;
-    items.map(item=>{      
+    items.map(item=>{
       if(item.key===key){
         console.log(item.key +"    "+key)
         item.text= text;
@@ -64,21 +64,25 @@ class App extends React.Component {
     this.setState({
       items: items
     })
-    
-   
+
+
   }
  render(){
   return (
     <div className="App">
+      <div className="lds-ripple">
+        <div></div>
+        <div></div>
+      </div>
       <header>
         <form id="to-do-form" onSubmit={this.addItem}>
           <input type="text" placeholder="Enter task" value= {this.state.currentItem.text} onChange={this.handleInput}></input>
           <button type="submit">Add</button>
         </form>
         <p>{this.state.items.text}</p>
-        
+
           <ListItems items={this.state.items} deleteItem={this.deleteItem} setUpdate={this.setUpdate}/>
-        
+
       </header>
     </div>
   );
