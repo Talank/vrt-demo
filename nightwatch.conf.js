@@ -27,7 +27,8 @@ const config = {
                     diff_suffix: '',
                     threshold: 0.02,
                     prompt: false,
-                    always_save_diff_screenshot: false
+                    always_save_diff_screenshot: false,
+                    retries:false
                 }
             },
             desiredCapabilities: {
